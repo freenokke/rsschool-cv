@@ -17,3 +17,9 @@ _At the moment, I haven't commercial experience, only the development of website
   * _CMS Wordpress_
   * _Bootstrap 4_
   * _Familiar with BAM methodology_
+
+## **Education**
+ _Yanka Kupala State University of Grodno -> Civil Engineering Faculty_
+
+## **English**
+_Elementary A1_
