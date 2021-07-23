@@ -10,3 +10,10 @@ _The desire to learn Javascript, because I like the frontend direction. I also w
 >The road surrenders to the one who walks it.
 
 _At the moment, I haven't commercial experience, only the development of websites / landing pages for training purposes_
+
+## **Skills**
+  * _HTML_
+  * _CSS_
+  * _CMS Wordpress_
+  * _Bootstrap 4_
+  * _Familiar with BAM methodology_
