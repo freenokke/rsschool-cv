@@ -155,3 +155,37 @@ blockquote {
     margin-bottom: 15px;
 }
 
+/* footer */
+
+footer {
+    background-color: #342d2d;
+}
+
+.footer__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+}
+
+.footer__content span{
+    color: white;
+    font-weight: bold;
+}
+
+.logo {
+    width: 100px;
+}
+
+.logo_link, .social-link__img {
+    transition: transform 0.5s;
+}
+
+.logo_link:hover, .social-link_img:hover {
+    transform: scale(1.1);
+}
+
+.social-link__img {
+    width: 35px;
+    height: 35px;
+}
