@@ -158,6 +158,13 @@ a:visited {
     padding-top: 64px;
 }
 
+.example-link {
+    background-color: #b92828;
+    color: #fff !important;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+
 .section-title {
     font-weight: bold;
     font-size: 36px;

@@ -14,7 +14,8 @@ if (iconMenu) {
 menuLink.forEach((item) => {
     item.addEventListener("click", () => {
         menuBody.classList.remove('_active');
-        document.body.classList.toggle('_lock');
-        iconMenu.classList.toggle('_active');
+        document.body.classList.remove('_lock');
+        iconMenu.classList.remove('_active');
     } )
 })
+
