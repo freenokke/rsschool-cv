@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>CV</title>
 </head>
@@ -19,18 +20,27 @@
                         <ul>
                             <li><b>Mobile:</b>&nbsp;+37591289927</li>
                             <li><b>Email:</b>&nbsp;freenokke@gmail.com</li>
-                            <li><b>Telegram:</b>&nbsp;@n0kke</li>
+                            <li><b>Discord:</b>&nbsp;@freenokke</li>
                         </ul>
                     </div>
                 </div>
                 <div class="hero-avatar"></div>                
             </div>
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li class="menu-list__item"><a href="#about">About</a></li>
+                    <li class="menu-list__item"><a href="#skills">Skills</a></li>
+                    <li class="menu-list__item"><a href="#code">Code Example</a></li>
+                    <li class="menu-list__item"><a href="#education">Education</a></li>
+                    <li class="menu-list__item"><a href="#languages">Languages</a></li>
+                </ul>
+            </nav>
         </div>
     </section>
     <section class="features">
         <div class="container">
             <div class="features-block">
-                <div class="features-item">
+                <div class="features-item" id="about">
                     <img src="img/features/about.png" alt="about" class="features-image">
                     <h3 class="features-title">About myself</h3>
                     <p class="features-text">
@@ -43,7 +53,7 @@
                         At the moment, I haven’t commercial experience, only the development of websites / landing pages for training purposes (On of example can see by <a href="https://freenokke.github.io/GWENT/">link</a>)
                     </p>
                 </div>
-                <div class="features-item">
+                <div class="features-item" id="skills">
                     <img src="img/features/skills.png" alt="skill" class="features-image">
                     <h3 class="features-title">Skills</h3>
                     <ul class="skills-list">
@@ -55,19 +65,44 @@
                         <li>Figma / Avocode</li>
                     </ul>
                 </div>
-                <div class="features-item">
+                <div class="features-item" id="code">
                     <img src="img/features/education.png" alt="education" class="features-image">
                     <h3 class="features-title">Education</h3>
                     <p class="features-text">
                         Yanka Kupala State University of Grodno -> Civil Engineering Faculty
                     </p>
                 </div>
-                <div class="features-item">
+                <div class="features-item" id="education">
                     <img src="img/features/EN.png" alt="english" class="features-image">
                     <h3 class="features-title">English</h3>
                     <p class="features-text">
                         Elementary A1
                     </p>
+                </div>
+                <div class="features-item" id="languages">
+                    <img src="img/features/EN.png" alt="english" class="features-image">
+                    <h3 class="features-title">Code Experience</h3>
+                    <p class="features-text">
+                        Array Deep Count
+                    </p>
+                    <pre><code class="js">
+function deepCount(a){
+if (a.length === 0) return 0;
+
+let count = a.length;
+
+let arr = a.map((item) => {
+    if (Array.isArray(item)) {
+    let recursion = deepCount(item);
+    count += recursion;
+    } else {
+    return item
+    }
+})
+    
+return count
+}
+                    </code></pre>
                 </div>
             </div>
         </div>
@@ -84,5 +119,8 @@
             </div>
             </div>
     </footer>
+    
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </body>
 </html>
