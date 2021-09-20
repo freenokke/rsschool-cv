@@ -116,6 +116,31 @@ return count
 }
                     </code></pre>
                 </div>
+                <div class="features-item" id="languages">
+                    <img src="img/features/EN.png" alt="english" class="features-image">
+                    <h3 class="features-title">Code Experience</h3>
+                    <p class="features-text">
+                        Array Deep Count
+                    </p>
+                    <pre><code class="js">
+function deepCount(a){
+if (a.length === 0) return 0;
+
+let count = a.length;
+
+let arr = a.map((item) => {
+    if (Array.isArray(item)) {
+    let recursion = deepCount(item);
+    count += recursion;
+    } else {
+    return item
+    }
+})
+    
+return count
+}
+                    </code></pre>
+                </div>
             </div>
         </div>
     </section>
