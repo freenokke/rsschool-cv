@@ -214,21 +214,31 @@ footer {
 }
 
 .logo_link {
-    transition: all 1s;
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(289deg) brightness(103%) contrast(102%);
+    animation: pulsing 2s infinite;
 }
 
 .social-link__img {
-    transition: all 1s;
-}
-
-.logo_link:hover, .social-link__img:hover {
-    transform: scale(1.2)
+    animation: pulsing 2s infinite;
 }
 
 .social-link__img {
     width: 35px;
     height: 35px;
+}
+
+
+
+@keyframes pulsing {
+    0% {
+        transform: translateY(10%);
+    }
+    50% {
+        transform: translateY(0%);
+    }
+    100% {
+        transform: translateY(10%);
+    }
 }
 
 /* adaptive */
