@@ -47,6 +47,6 @@ function deepCount(a){
  _Yanka Kupala State University of Grodno -> Civil Engineering Faculty_
 
 ## **English**
-_Elementary A2 by result of EPAM Examinator platform_
+_A2 by result of EPAM Examinator platform_
 
 ![screenshot](./img/A2.png)
