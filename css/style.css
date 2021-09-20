@@ -79,7 +79,36 @@ a:visited {
     padding: 20px;
     border-radius: 10px;
     text-align: left;
+    animation: pulsing1 2s infinite;
 }
+
+.underline {
+    height: 2px;
+    position: relative;
+}
+.underline::after {
+    display: block;
+    content: "";
+    color: transparent;
+    background-color: transparent;
+    width: 0%;
+    left: 50%;
+    bottom: -10%;
+    position: absolute;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    animation: pulsing2 2s infinite;
+    box-shadow: 0px 0px 20px 3px #000000;
+}
+
+.hero-description:hover::after {
+    width: 100%;
+}
+
 .hero-avatar {
     width: 389px;
     height: 389px;
@@ -215,11 +244,11 @@ footer {
 
 .logo_link {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(289deg) brightness(103%) contrast(102%);
-    animation: pulsing 2s infinite;
+    animation: pulsing1 2s infinite;
 }
 
 .social-link__img {
-    animation: pulsing 2s infinite;
+    animation: pulsing1 2s infinite;
 }
 
 .social-link__img {
@@ -229,7 +258,7 @@ footer {
 
 
 
-@keyframes pulsing {
+@keyframes pulsing1 {
     0% {
         transform: translateY(10%);
     }
@@ -238,6 +267,18 @@ footer {
     }
     100% {
         transform: translateY(10%);
+    }
+}
+@keyframes pulsing2 {
+    0% {
+        width: 40%;
+    }
+    50% {
+        
+        width: 0;
+    }
+    100% {
+        width: 40%;
     }
 }
 
