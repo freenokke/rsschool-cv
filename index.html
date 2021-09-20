@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>CV</title>
 </head>
@@ -74,13 +75,19 @@
                 </div>
                 <div class="features-item" id="education">
                     <img src="img/features/EN.png" alt="english" class="features-image">
-                    <h3 class="features-title">English</h3>
-                    <p class="features-text">
-                        Elementary A1
-                    </p>
+                    <h3 class="features-title">Language</h3>
+                    <ul>
+                        <li class="features-text">Russian: Native</li>
+                        <li class="features-text">
+                            English: Elementary A2 by result of EPAM Examinator platform <br/>
+                            <a data-fancybox="gallery" data-src="img/A2.png" style="cursor: pointer;">
+                                <img src="img/A2.png" class="features-image" alt="img">
+                            </a>
+                        </li>
+                    </ul>       
                 </div>
                 <div class="features-item" id="languages">
-                    <img src="img/features/EN.png" alt="english" class="features-image">
+                    <img src="img/features/code.png" alt="english" class="features-image">
                     <h3 class="features-title">Code Experience</h3>
                     <p class="features-text">
                         Array Deep Count
@@ -114,13 +121,17 @@ return count
                 <a href="https://rs.school/js/" class="logo_link"><img src="img/footer/rsschool_logo.svg" alt="logo" class="logo"></a>
                 <span>2021</span>
                 <div class="social-links">
-                    <a href="https://github.com/freenokke/rsschool-cv/tree/main" class="social-link"><img src="img/footer/github.svg" alt="github" class="social-link__img"></a>
+                    <a href="https://github.com/freenokke/rsschool-cv" class="social-link"><img src="img/footer/github.svg" alt="github" class="social-link__img"></a>
                 </div>
             </div>
             </div>
     </footer>
     
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-<script>hljs.initHighlightingOnLoad();</script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+<script>
+    hljs.initHighlightingOnLoad();
+
+</script>
 </body>
 </html>
